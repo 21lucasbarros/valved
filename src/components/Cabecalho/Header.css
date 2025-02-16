@@ -1,5 +1,6 @@
 .cabecalho {
-    padding: 1% 2%;
+    padding: 1.5% 3%;
+    background-color: #14181C;
 }
 
 .cabecalho__conteudo {
@@ -21,8 +22,12 @@
     font-size: 1rem;
     font-family: var(--fontPrincipal);
     font-weight: 600;
-    color: var(--corPreto);
+    color: var(--corBranco);
     text-decoration: none;
+}
+
+label {
+    color: var(--corBranco);
 }
 
 .cabecalho__conteudo__search-bar {
@@ -30,22 +35,30 @@
     outline: none;
     font-size: 1rem;
     background-color: transparent;
-    color: var(--corPreto);
+    color: var(--corBranco);
     font-family: var(--fontPrincipal);
     font-size: 1rem;
     padding-left: 5px;
+}
+
+.cabecalho__conteudo__search-bar::placeholder {
+    color: var(--corBranco);
+    font-family: var(--fontPrincipal);
+    font-size: 0.9rem;
 }
 
 .cabecalho__conteudo__botao {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 4px;
+    justify-content: center;
+    padding: 4px 8px;
     background-color: #00AC1C;
     border: none;
     border-radius: 4px;
     color: var(--corBranco);
     font-weight: bold;
+    margin-left: 12px;
 }
 
 .cabecalho__conteudo__botao:hover {

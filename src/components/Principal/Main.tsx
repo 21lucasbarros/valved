@@ -12,6 +12,10 @@ export default function Main() {
   return (
     <>
       <main className="principal">
+        <video autoPlay loop muted className="principal__video-bg">
+          <source src="./img/background2.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos.
+        </video>
         <section className="principal__conteudo">
           <h1 className="principal__conteudo__titulo">
             BEM-VINDO AO <span>VALVED</span>

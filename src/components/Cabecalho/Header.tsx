@@ -24,6 +24,9 @@ export default function Header() {
               <a href="#">MEMBROS</a>
             </li>
           </ul>
+        </section>
+
+        <section className="cabecalho__conteudo__direita">
           <label htmlFor="buscar">
             <i className="ri-search-line"></i>
           </label>

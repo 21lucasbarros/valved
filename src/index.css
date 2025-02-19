@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kaushan+Script&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --corBranco: #f7f7f7;
@@ -8,6 +8,7 @@
   --fontPrincipal: 'DM Sans', sans-serif;
   --fontSecundaria: 'Roboto', sans-serif;
   --fontLogo: 'Pacifico', sans-serif;
+  --fontLogo2: 'Kaushan Script', sans-serif;
 }
 
 * {

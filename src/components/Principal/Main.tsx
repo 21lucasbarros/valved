@@ -75,7 +75,7 @@ export default function Main() {
               className="principais-albuns-card"
             />
             <img
-              src="./img/albuns/dark-side-of-the-moon.png"
+              src="./img/albuns/happier-than-ever.png"
               alt="Happier Than Ever - Billie Eilish"
               className="principais-albuns-card"
             />

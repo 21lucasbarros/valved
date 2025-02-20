@@ -1,3 +1,7 @@
+body {
+    background-color: #111111;
+}
+
 .principal {
     min-height: 100vh;
     display: flex;
@@ -32,19 +36,19 @@
 
 .principal__conteudo__titulo {
     font-size: 2.5rem;
-    color: var(--corPreto);
+    color: var(--corBranco);
     font-family: var(--fontPrincipal);
 }
 
 .principal__conteudo__titulo span {
     font-family: var(--fontLogo);
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--corPreto);
+    -webkit-text-stroke: 1px var(--corBranco);
 }
 
 .principal__conteudo__paragrafo {
     font-size: 1.5rem;
-    color: var(--corPreto);
+    color: var(--corBranco);
     font-family: var(--fontPrincipal);
 }
 
@@ -54,14 +58,12 @@
     font-size: 1rem;
     font-family: var(--fontPrincipal);
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: auto;
     max-width: 320px;
-    margin: 0 auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -80,16 +82,17 @@
 }
 
 .principais-albuns__conteudo__titulo {
-    font-size: 0.9rem;
-    color: var(--corPreto);
+    font-size: 1rem;
+    color: var(--corBranco);
     font-family: var(--fontSecundaria);
 }
 
 .faixa {
-    background-color: #111111;
+    background-color: var(--corBranco);
     height: 1.5px;
     width: auto;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+    margin-top: 1px;
 }
 
 .principais-albuns__conteudo__lista {
@@ -100,5 +103,134 @@
 }
 
 .principais-albuns-card {
-    width: 11.8%;
+    width: 13.5%;
+}
+
+.principais-albuns__conteudo__paragrafo {
+    font-size: 1rem;
+    color: var(--corBranco);
+    font-family: var(--fontSecundaria);
+    margin-top: 10px;
+}
+
+.principais-albuns__conteudo__paragrafo a {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+.principais-albuns__conteudo__paragrafo a:hover {
+    text-decoration: underline;
+}
+
+.generos {
+    padding: 2% 10%;
+}
+
+.generos__conteudo__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fontPrincipal);
+    color: var(--corBranco);
+    text-align: center;
+}
+
+.generos__conteudo__generos {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.generos__conteudo__generos__botao {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid var(--corBranco);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fontPrincipal);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--corBranco);
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.generos__conteudo__generos__botao::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.2s;
+    border-radius: 2em;
+    z-index: -1;
+}
+
+.generos__conteudo__generos__botao:hover {
+    color: var(--corPreto);
+    transform: scale(1.05);
+}
+
+.generos__conteudo__generos__botao:hover::after {
+    background-color: rgb(255, 255, 255);
+}
+
+.playlist {
+    padding: 2% 10%;
+}
+
+.playlist__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist__conteudo__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fontPrincipal);
+    color: var(--corBranco);
+    text-align: center;
+}
+
+.playlist__conteudo__paragrafo {
+    font-size: 1.2rem;
+    font-family: var(--fontPrincipal);
+    color: var(--corBranco);
+    text-align: center;
+}
+
+.playlist__conteudo__botao {
+    background-color: #28a745;
+    color: var(--corBranco);
+    font-size: 1rem;
+    font-family: var(--fontPrincipal);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 320px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.playlist__conteudo__botao:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.playlist__conteudo__botao:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.7);
 }

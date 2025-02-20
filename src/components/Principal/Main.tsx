@@ -22,7 +22,7 @@ export default function Main() {
           </h1>
           <p className="principal__conteudo__paragrafo">
             <span>{text}</span>
-            <Cursor cursorStyle="|" cursorColor="#111111" /> suas músicas
+            <Cursor cursorStyle="|" cursorColor="#f7f7f7" /> suas músicas
             favoritas.
           </p>
           <a
@@ -79,12 +79,44 @@ export default function Main() {
               alt="Happier Than Ever - Billie Eilish"
               className="principais-albuns-card"
             />
-            <img
-              src="./img/albuns/timbu.png"
-              alt="MC Timbu"
-              className="principais-albuns-card"
-            />
           </section>
+          <p className="principais-albuns__conteudo__paragrafo">
+            Os indicados ao Álbum do Ano no 67º Grammy Awards, que acontecerá em
+            21 de fevereiro de 2025. Siga o{" "}
+            <a
+              href="https://www.instagram.com/21lucasbarros/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Grammy HQ
+            </a>
+          </p>
+        </section>
+      </section>
+
+      <section className="generos">
+        <section className="generos__conteudo">
+          <h2 className="generos__conteudo__titulo">EXPLORE POR GÊNERO</h2>
+          <section className="generos__conteudo__generos">
+            <button className="generos__conteudo__generos__botao">Rock</button>
+            <button className="generos__conteudo__generos__botao">Pop</button>
+            <button className="generos__conteudo__generos__botao">Rap</button>
+            <button className="generos__conteudo__generos__botao">Jazz</button>
+            <button className="generos__conteudo__generos__botao">Indie</button>
+            <button className="generos__conteudo__generos__botao">
+              Pagode
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <section className="playlist">
+        <section className="playlist__conteudo">
+          <h2 className="playlist__conteudo__titulo">CRIE SUA PLAYLIST</h2>
+          <p className="playlist__conteudo__paragrafo">
+            Escolha suas músicas favoritas e monte sua playlist perfeita!
+          </p>
+          <button className="playlist__conteudo__botao">Começar</button>
         </section>
       </section>
     </>

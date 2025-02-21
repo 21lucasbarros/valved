@@ -1,4 +1,5 @@
 import "./Main.css";
+import Features from "../Features/Features";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Main() {
@@ -93,6 +94,8 @@ export default function Main() {
           </p>
         </section>
       </section>
+
+      <Features />
 
       <section className="generos">
         <section className="generos__conteudo">

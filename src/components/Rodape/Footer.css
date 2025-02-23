@@ -1,0 +1,43 @@
+.rodape {
+    padding: 2% 10%;
+    background-color: #14181C;
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.rodape__conteudo__redes {
+    display: flex;
+    gap: 5px;
+}
+
+.rodape__conteudo__redes__rede {
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.rodape__conteudo__redes__rede:hover {
+    transform: scale(1.3) rotate(5deg);
+    opacity: 0.8;
+}
+
+.rodape__conteudo__redes i {
+    font-size: 1.5rem;
+    color: var(--corBeje);
+}
+
+.rodape__conteudo__frase__paragrafo {
+    font-size: 1.2rem;
+    font-family: var(--fontPrincipal);
+    color: var(--corBeje);
+}
+
+.rodape__conteudo__copyright {
+    font-size: 1.1rem;
+    font-family: var(--fontPrincipal);
+    color: var(--corBeje);
+}

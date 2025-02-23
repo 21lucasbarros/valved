@@ -158,23 +158,28 @@ body {
 }
 
 .generos__conteudo__generos__botao {
-    display: inline-block;
-    padding: 0.5em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid var(--corBranco);
-    border-radius: 2em;
-    box-sizing: border-box;
+    position: relative;
+    outline: none;
     text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    background-color: transparent;
+    border: 2px solid var(--corBranco);
     font-family: var(--fontPrincipal);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: bold;
     color: var(--corBranco);
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
     text-align: center;
-    transition: all 0.2s;
+    transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
-    background-color: transparent;
 }
 
 .generos__conteudo__generos__botao::after {
@@ -185,18 +190,68 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0);
-    transition: background-color 0.2s;
-    border-radius: 2em;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50px;
     z-index: -1;
 }
 
 .generos__conteudo__generos__botao:hover {
-    color: var(--corPreto);
+    animation: bn54rotate 0.7s ease-in-out both;
     transform: scale(1.05);
+    color: var(--corPreto);
 }
 
 .generos__conteudo__generos__botao:hover::after {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.generos__conteudo__generos__botao:hover span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bn54storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
 }
 
 .playlist {

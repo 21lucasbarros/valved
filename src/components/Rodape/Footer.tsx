@@ -16,42 +16,54 @@ export default function Footer() {
               <i className="ri-instagram-fill"></i>
             </a>
             <a
-              href="#"
+              href="https://www.threads.com/21lucasbarros/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rodape__conteudo__redes__rede"
               aria-label="Threads"
             >
               <i className="ri-threads-fill"></i>
             </a>
             <a
-              href="#"
+              href="https://www.x.com/21lucasbarros/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rodape__conteudo__redes__rede"
-              aria-label="Twitter"
+              aria-label="X"
             >
               <i className="ri-twitter-x-fill"></i>
             </a>
             <a
-              href="#"
+              href="https://www.bluesky.com/21lucasbarros/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rodape__conteudo__redes__rede"
               aria-label="BlueSky"
             >
               <i className="ri-bluesky-fill"></i>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/lucasbarrossimon/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rodape__conteudo__redes__rede"
               aria-label="Facebook"
             >
               <i className="ri-facebook-circle-fill"></i>
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@weacked/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rodape__conteudo__redes__rede"
               aria-label="TikTok"
             >
               <i className="ri-tiktok-fill"></i>
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@21lucasbarros/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rodape__conteudo__redes__rede"
               aria-label="YouTube"
             >

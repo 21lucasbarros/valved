@@ -1,0 +1,52 @@
+.estatisticas {
+    padding: 5% 10%;
+}
+
+.estatisticas__conteudo__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fontPrincipal);
+    color: var(--corBranco);
+    text-align: center;
+}
+
+.estatisticas__conteudo__cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.estatistica-card {
+    width: 200px;
+    padding: 25px 15px;
+    background-color: #2a2d32;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.estatistica-card:hover {
+    transform: scale(1.05);
+}
+
+.estatistica-card i {
+    color: #28a745;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.estatistica-card__numero {
+    font-size: 2rem;
+    font-family: var(--fontPrincipal);
+    font-weight: bold;
+    color: var(--corBranco);
+    margin: 0 0 5px;
+}
+
+.estatistica-card__texto {
+    font-size: 1rem;
+    font-family: var(--fontSecundaria);
+    color: #aaa;
+    margin: 0;
+}

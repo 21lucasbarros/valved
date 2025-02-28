@@ -1,6 +1,7 @@
 import "./Main.css";
 import Features from "../Features/Features";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Analytics from "../Analytics/Analytics";
 
 export default function Main() {
   const [text] = useTypewriter({
@@ -122,6 +123,8 @@ export default function Main() {
           <button className="playlist__conteudo__botao">Começar</button>
         </section>
       </section>
+
+      <Analytics />
     </>
   );
 }

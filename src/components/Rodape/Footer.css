@@ -25,7 +25,7 @@
 
 .rodape__conteudo__logo i {
     font-size: 2rem;
-    color: #28a745;
+    color: #f39c12;
 }
 
 .rodape__conteudo__logo h2 {
@@ -65,23 +65,6 @@
     color: var(--corBeje);
 }
 
-.rodape__conteudo__redes__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: var(--corBranco);
-    transition: all 0.3s ease;
-}
-
-.rodape__conteudo__redes__link:hover {
-    background-color: #28a745;
-    transform: translateY(-3px);
-}
-
 .rodape__conteudo__titulo {
     font-family: var(--fontPrincipal);
     font-size: 1.2rem;
@@ -97,7 +80,7 @@
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #28a745;
+    background-color: #f39c12;
 }
 
 .rodape__conteudo__lista {

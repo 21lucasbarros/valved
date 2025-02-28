@@ -60,7 +60,9 @@ export default function Analise() {
   return (
     <section className="estatisticas" ref={estatisticasRef}>
       <div className="estatisticas__conteudo">
-        <h2 className="estatisticas__conteudo__titulo">VALVED EM NÚMEROS</h2>
+        <h2 className="estatisticas__conteudo__titulo">
+          A FORÇA DA NOSSA COMUNIDADE
+        </h2>
         <div className="estatisticas__conteudo__cards">
           <div className="estatistica-card">
             <i className="ri-music-2-line" />

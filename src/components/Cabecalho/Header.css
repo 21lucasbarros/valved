@@ -80,6 +80,8 @@ label {
     color: var(--corBranco);
     font-family: var(--fontPrincipal);
     padding-left: 5px;
+    padding-right: 30px;
+    width: 100%;
 }
 
 .cabecalho__conteudo__search-bar::placeholder {
@@ -97,8 +99,8 @@ label {
 .search-results {
     position: absolute;
     top: 100%;
-    left: 1595px;
-    width: 14%;
+    left: 1560px;
+    width: 13%;
     background-color: #1E2429;
     border-radius: 6px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
@@ -122,4 +124,20 @@ label {
     background: #007bff;
     color: white;
     border-radius: 4px;
+}
+
+.clear-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--corBranco);
+}
+
+.clear-button:focus {
+    outline: none;
 }

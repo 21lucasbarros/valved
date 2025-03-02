@@ -9,6 +9,7 @@ interface Artist {
 export default function Header() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Artist[]>([]);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const normalizeString = (str: string) => {
     return str
@@ -43,6 +44,24 @@ export default function Header() {
     }
   };
 
+  const handleEscKey = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Escape") {
+      setResults([]);
+      setIsSearchOpen(false);
+      (event.target as HTMLInputElement).blur();
+    }
+  };
+
+  const handleFocus = () => {
+    setIsSearchOpen(true);
+    setResults([]);
+  };
+
+  const clearSearch = () => {
+    setQuery("");
+    setResults([]);
+  };
+
   return (
     <header className="cabecalho">
       <section className="cabecalho__conteudo">
@@ -72,16 +91,29 @@ export default function Header() {
           <label htmlFor="buscar">
             <i className="ri-search-line"></i>
           </label>
-          <input
-            type="text"
-            name="buscar"
-            id="buscar"
-            className="cabecalho__conteudo__search-bar"
-            placeholder="Buscar artista ou banda"
-            onChange={handleInputChange}
-            value={query}
-          />
-          {results.length > 0 && (
+          <div className="search-container">
+            <input
+              type="text"
+              name="buscar"
+              id="buscar"
+              className="cabecalho__conteudo__search-bar"
+              placeholder="Buscar artista ou banda"
+              onChange={handleInputChange}
+              value={query}
+              onKeyDown={handleEscKey}
+              onFocus={handleFocus}
+            />
+            {query && (
+              <button
+                className="clear-button"
+                onClick={clearSearch}
+                aria-label="Limpar busca"
+              >
+                <i className="ri-close-line"></i>
+              </button>
+            )}
+          </div>
+          {isSearchOpen && results.length > 0 && (
             <ul className="search-results">
               {results.slice(0, 5).map((artist) => (
                 <li key={artist.id} className="search-item">

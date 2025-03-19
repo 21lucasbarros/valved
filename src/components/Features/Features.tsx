@@ -3,36 +3,36 @@ import "./Features.css";
 export default function Features() {
   const features = [
     {
-      icon: <i className="ri-eye-fill"></i>,
+      icon: <i className="ri-eye-fill" />,
       title: "Acompanhe suas músicas",
       description: "Registre todas as músicas que já ouviu ou comece agora.",
     },
     {
-      icon: <i className="ri-heart-fill"></i>,
+      icon: <i className="ri-heart-fill" />,
       title: "Demonstre seu amor",
       description:
         "Curta suas músicas favoritas e explore as listas de outros usuários.",
     },
     {
-      icon: <i className="ri-pencil-fill"></i>,
+      icon: <i className="ri-pencil-fill" />,
       title: "Escreva e compartilhe",
       description:
         "Publique resenhas e acompanhe amigos para ver as opiniões deles.",
     },
     {
-      icon: <i className="ri-star-fill"></i>,
+      icon: <i className="ri-star-fill" />,
       title: "Avalie músicas e álbuns",
       description:
         "Dê notas em estrelas (incluindo frações) e compartilhe suas impressões.",
     },
     {
-      icon: <i className="ri-calendar-2-fill"></i>,
+      icon: <i className="ri-calendar-2-fill" />,
       title: "Registre sua jornada",
       description:
         "Acompanhe suas músicas e álbuns escutados e visualize estatísticas detalhadas.",
     },
     {
-      icon: <i className="ri-play-list-line"></i>,
+      icon: <i className="ri-play-list-line" />,
       title: "Crie suas listas",
       description:
         "Organize músicas e álbuns em coleções temáticas e monte sua playlist personalizada.",
